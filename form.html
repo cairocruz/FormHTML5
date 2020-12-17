@@ -1,11 +1,91 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulário</title>
 </head>
+
 <body>
-    
+    <form method="GET" action="">
+        <fieldset>
+            <legend>Conta:</legend>
+            <div>
+
+                <label>Email:</label>
+                <input type="email">
+            </div>
+            <div>
+                <label>Senha:</label>
+                <input type="password" name="senha" id="">
+
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Pessoal:</legend>
+            <div>
+                <label>Nome:</label>
+                <input type="text" placeholder="EX:Bruno">
+            </div>
+            <div>
+                <label>Telefone:</label>
+                <input type="tel" placeholder="Ex:(99)99999-9999">
+            </div>
+            Sexo:
+            <div>
+                <label for="">Masculino:</label>
+                <input type="radio" name="sexo" id="">
+                <label for="">Feminino:</label>
+                <input type="radio" name="sexo" id="">
+            </div>
+            <div>
+                <label for="">Data De Nascimento:</label>
+                <input type="date" name="DataNiver" id="">
+            </div>
+            <div>
+                <label for="">Foto de perfil:</label>
+                <input type="file" accept="image/*">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Endereço:</legend>
+            <div>
+                <label for="">Rua:</label>
+                <input type="text">
+            </div>
+            <div>
+                <label for="">Número:</label>
+                <input type="number" name="Número" min="0" max="9999">
+            </div>
+            <div>
+                <label for="">Complemento</label>
+                <input type="text" name="complemento" id="">
+            </div>
+            <div>
+                <label for="">Cidade:</label>
+                <input type="text" name="Cidade" id="">
+            </div>
+            <div>
+                <label for="">Estado</label>
+                <input type="text" name="Estado" id="">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Anúncio:</legend>
+            <div>
+                <label for="">Como conheceu o HelloPizza:</label>
+                <textarea
+                    laceholder="Conte a sua historia e diga para a gente como conheceu a melhor pizzaria do brasil"
+                    name="adicional" rows="10" cols="20"></textarea>
+            </div>
+            <div>
+                <input type="checkbox" name="utilizou" value="sim" checked>
+                <label for="">Desejo receber ofertas por e-mail</label>
+            </div>
+        </fieldset>
+        <input type="submit" value="Finalizar cadastro">
+    </form>
 </body>
+
 </html>
